@@ -24,6 +24,6 @@ One of the most important moments is feature selection. Based on our dataset the
 
 Our case study is a classification matter. Consequently the choice to estimate and come up with a machine learning model is going to be related to this. In order to intesify and get diverses results its approach is built by three separeted methods: Naive Bayes, SVM (Support Vector Machine), and Random Forest models.
 
-**6) Training, Testing, and evaluate each of them.**
+**6) Training, Testing, and evaluate each of them:**
 
 It is the main segment on project. The fundamental thing here is extract, testing and undertanding diverse options to analyse and interpret outcomes from distinct models applied. Particularly, the outcomes at this point is reflected of previous steps and when woulb be necessary change, optimize, refine outputs we must come back and readapt, modifie antecedent stages.  
