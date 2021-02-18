@@ -23,7 +23,6 @@
 # define your work directory.
 
 getwd()
-setwd("C:/FCD/BigDataRAzure/Cap18/")
 
 ### 1) Get dataset.
 
