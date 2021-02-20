@@ -83,6 +83,7 @@ str(df)
 summary(df)
 
 ```
+![](https://github.com/leonvictorlima/ML-Credit-Analysis-Data-Science/blob/main/Images/dataframe.JPG)
 
 **4) Feature Selection:**
 
@@ -102,9 +103,12 @@ feature_selection <- randomForest(credit.rating ~ ., data = train_data,
 
 varImpPlot(feature_selection)
 
-#Work with intertwine outcomes. We shall use all variables except two:
-#dependents and telephone.
+```
+<img src="https://github.com/leonvictorlima/ML-Credit-Analysis-Data-Science/blob/main/Images/feature_selection.png" width="700">
 
+```R
+#We shall work with intertwine outcomes. We shall use all variables except two:
+#dependents and telephone.
 ```
 
 **5) The choice of Machine Learning Model:**
@@ -116,6 +120,7 @@ Our case study is a classification matter. Consequently, the choice to estimate 
 It is the main segment of the project. The fundamental thing here is extract, testing, and understanding diverse options to analyse and interpret outcomes from distinct models applied. Particularly, the outcomes at this point are reflected from previous steps, and when necessary to change, optimize, refine outputs we must come back and readapt, modify, rearrange, and so on some antecedent stages. 
 
 ```R
+
 ### 7) Training, Test, and evaluate each of them.
 
 # install.packages(e1071)
@@ -142,6 +147,12 @@ nb_pred <- predict(naivebayes_model, newdata = test_data[,-1])
 ?confusionMatrix
 confusionMatrix(table( real = test_data[,1], previsto = nb_pred))
 
+```
+
+![](https://github.com/leonvictorlima/ML-Credit-Analysis-Data-Science/blob/main/Images/NaiveBayes_cm.JPG)
+
+```R
+
 # Model 02 - SVM (Support Vector Machines)
 
 ?svm
@@ -158,6 +169,11 @@ svm_pred <- predict(svm_model, newdata = test_data[,-1])
 # SVM - Confusion matrix
 
 confusionMatrix(table(real = test_data[,1], predicted = svm_pred))
+
+```
+![](https://github.com/leonvictorlima/ML-Credit-Analysis-Data-Science/blob/main/Images/svm_cm.JPG)
+
+```R
 
 # Model 03 - Random Forest
 
@@ -178,6 +194,8 @@ rf_pred <- predict(rf_model, newdata = test_data[,-1])
 confusionMatrix(table(real = test_data[,1],predicted = rf_pred))
 
 ```
+![](https://github.com/leonvictorlima/ML-Credit-Analysis-Data-Science/blob/main/Images/RF_cm.JPG)
+
 **7) Extra performance analysis:**
 
 The last and additional context here is one of most important evaluation metrics which is checking Area Under Curve (AUC) + Receiver Operating Characteristics (ROC). In this case, these element are used to complement and reinforce the confidence estimated previously. 
@@ -240,6 +258,10 @@ pred_nb <- prediction(matrix_nb$predicted, matrix_nb$real)
 plot.roc.curve(pred_nb, title.text = "Naive Bayes - ROC Curve")
 plot.pr.curve(pred_nb, title.text = "Precision/Recall Curve ")
 
+```
+![](https://github.com/leonvictorlima/ML-Credit-Analysis-Data-Science/blob/main/Images/NaiveBayes_roc.png)
+
+```R
 
 ### Model 02 - SVM - AUC-ROC curve Analysis.
 
@@ -257,6 +279,11 @@ pred_svm <- prediction(matrix_svm$predicted, matrix_svm$real)
 plot.roc.curve(pred_svm, title.text = "SVM - Curva ROC")
 plot.pr.curve(pred_svm, title.text = "Curva Precision/Recall")
 
+```
+
+![](https://github.com/leonvictorlima/ML-Credit-Analysis-Data-Science/blob/main/Images/svm_roc.png)
+
+```R
 #### Model 03 - Random Forest - AUC-ROC curve Analysis.
 
 # Producing a matrix with real and predicted data to generate ROC Curve.
@@ -273,6 +300,7 @@ par(mfrow = c(1,2))
 plot.roc.curve(pred_rf, title.text = "RF - Curva ROC")
 plot.pr.curve(pred_rf, title.text = "RF - Curva Precision/Recall")
 ```
+![](https://github.com/leonvictorlima/ML-Credit-Analysis-Data-Science/blob/main/Images/rf_roc.png)
 
 ## Conclusion
 
