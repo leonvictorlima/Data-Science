@@ -307,3 +307,8 @@ plot.pr.curve(pred_rf, title.text = "RF - Curva Precision/Recall")
 At the end of the first investigation the model 03, Random Forest, had a better performance than others. On the other hand, we must consider that it was a quick exploration and any aspects were not contemplated just now. When making use of AUC-ROC Curve is easy to realize its incisive achievement. Further that, it is important to return and intensify exploration to get elevate more its efficiency. 
 
 As a suggestion for future works, it is necessary to come up with, or rearrange, new data modulation in the manipulation step, as well as replace, take out, and make use of distinct variables in the feature selection step. In addition, conduct a new version of machine learning design performed manipulating its arguments.
+
+## Bibliography
+
+(1) dataset - https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)
+(2) Data Science Academy - https://www.datascienceacademy.com.br/
