@@ -1,5 +1,9 @@
 <h1 align="center">Credit Analysis using Machine Learning Classification Models</h1>
 
+<h1 align="center">
+  <img src="https://github.com/leonvictorlima/Calculadora_python/blob/main/imagens/credit.png"  width="500"/>
+</h1>
+
 ## Introduction
 
 Machine Learning  is one of the current technology and is being each time more relevant around the world. Its application is conducted and implemented in a large scale as well as managed a revolution.
