@@ -1,4 +1,4 @@
-<h1 align="center">Machine-Learning-Credit-Analysis</h1>
+<h1 align="center">Credit Analysis using Machine Learning Classification Models</h1>
 
 ## Introduction
 
