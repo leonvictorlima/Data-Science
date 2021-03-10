@@ -314,5 +314,5 @@ As a suggestion for future works, it is necessary to come up with, or rearrange,
 
 ## Bibliography
 
-(1) dataset - https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)
-(2) Data Science Academy - https://www.datascienceacademy.com.br/
+[1] dataset - https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)
+[2] Data Science Academy - https://www.datascienceacademy.com.br/
