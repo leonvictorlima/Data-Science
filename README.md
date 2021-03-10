@@ -17,12 +17,12 @@ Tabela de conteúdos
    * [Introduction](#introduction)
    * [Business problem](#business-problem)
    * [Collecting the data](#collecting-data)
-      * [Analysing data](#analysing-data)
-      * [Feature Selection](#feature-selection)
-      * [The choice of Machine Learning Model](#machine-learning)
-      * [Training, Testing, and evaluate each of them](#training-test)
-      * [Extra performance analysis](#perfomance-analysis)
-      * [Conclusion](#conclusion)
+   * [Analysing data](#analysing-data)
+   * [Feature Selection](#feature-selection)
+   * [The choice of Machine Learning Model](#machine-learning)
+   * [Training, Testing, and evaluate each of them](#training-test)
+   * [Extra performance analysis](#perfomance-analysis)
+   * [Conclusion](#conclusion)
    * [Bibliography](#bibliography)
 <!--te-->
 
