@@ -1,4 +1,4 @@
-# Machine-Learning-Credit-Analysis
+<h1 align="center">Machine-Learning-Credit-Analysis</h1>
 
 ## Introduction
 
