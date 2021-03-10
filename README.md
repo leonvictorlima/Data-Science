@@ -4,16 +4,34 @@
   <img src="https://github.com/leonvictorlima/Machine-Learning-Credit-Analysis-Data-Science/blob/main/Images/credit.jpg"  width="500"/>
 </h1>
 
+<a name="introduction"></a>
 ## Introduction
 
 Machine Learning  is one of the current technology and is being each time more relevant around the world. Its application is conducted and implemented in a large scale as well as managed a revolution.
 
 This project is to share some knowledge about the use of machine learning in credit analysis. The implemantation of the model is straight to the point. By the way, like any machine learning application, the crucial steps are followed. Here they are:
 
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Introduction](#introduction)
+   * [Business problem](#business-problem)
+   * [Collecting the data](#collecting-data)
+      * [Analysing data](#analysing-data)
+      * [Feature Selection](#feature-selection)
+      * [The choice of Machine Learning Model](#machine-learning)
+      * [Training, Testing, and evaluate each of them](#training-test)
+      * [Extra performance analysis](#perfomance-analysis)
+      * [Conclusion](#conclusion)
+   * [Bibliography](#bibliography)
+<!--te-->
+
+<a name="business-problem"></a>
 **1) Business problem:**
 
 The big idea here and behind all sector and also familiar for each financial institution is credit analysis. How prevent whether anyone will be a debtor or not? How to identify whether is a great oportunity to invest in anybody's dream? That are some relevant question to be answered.
 
+<a name="collecting-data"></a>
 **2) Collecting the data:**
 
 The data is provided with elemental information which are used in credit analysis. The dataset is attached here.
@@ -21,7 +39,7 @@ The data is provided with elemental information which are used in credit analysi
 ```R
 df<-read.csv("credit_dataset.csv")
 ```
-
+<a name="analysing-data"></a>
 **3) Analysing data:**
 
 Normally it is a prominent part of all data science processes and some analyses are realized. On the other hand, the main aspect which is explored in this case study is related to the execution of some prediction prototype. For that reason, this point will not be diving deeply.
@@ -89,6 +107,7 @@ summary(df)
 ```
 ![](https://github.com/leonvictorlima/ML-Credit-Analysis-Data-Science/blob/main/Images/dataframe.JPG)
 
+<a name="feature-selection"></a>
 **4) Feature Selection:**
 
 One of the most important moments is feature selection. Based on our dataset, the outcomes from any machine learning project and its capacity is explored at maximum level with an excellent feature selection. It needs a strong workforce to fit it.
@@ -114,11 +133,12 @@ varImpPlot(feature_selection)
 #We shall work with intertwine outcomes. We shall use all variables except two:
 #dependents and telephone.
 ```
-
+<a name="machine-learning"></a>
 **5) The choice of Machine Learning Model:**
 
 Our case study is a classification matter. Consequently, the choice to estimate and come up with a machine learning model will be related to this. For intensification and get multiple results, its approach is built by three separated methods: Naive Bayes, SVM (Support Vector Machine), and Random Forest models.
 
+<a name="trainning-test"></a>
 **6) Training, Testing, and evaluate each of them:**
 
 It is the main segment of the project. The fundamental thing here is extract, testing, and understanding diverse options to analyse and interpret outcomes from distinct models applied. Particularly, the outcomes at this point are reflected from previous steps, and when necessary to change, optimize, refine outputs we must come back and readapt, modify, rearrange, and so on some antecedent stages. 
@@ -200,6 +220,7 @@ confusionMatrix(table(real = test_data[,1],predicted = rf_pred))
 ```
 ![](https://github.com/leonvictorlima/ML-Credit-Analysis-Data-Science/blob/main/Images/RF_cm.JPG)
 
+<a name="permonance-analysis"></a>
 **7) Extra performance analysis:**
 
 The last and additional context here is one of most important evaluation metrics which is checking Area Under Curve (AUC) + Receiver Operating Characteristics (ROC). In this case, these element are used to complement and reinforce the confidence estimated previously. 
@@ -306,12 +327,14 @@ plot.pr.curve(pred_rf, title.text = "RF - Curva Precision/Recall")
 ```
 ![](https://github.com/leonvictorlima/ML-Credit-Analysis-Data-Science/blob/main/Images/rf_roc.png)
 
+<a name="conclusion"></a>
 ## Conclusion
 
 At the end of the first investigation the model 03, Random Forest, had a better performance than others. On the other hand, we must consider that it was a quick exploration and any aspects were not contemplated just now. When making use of AUC-ROC Curve is easy to realize its incisive achievement. Further that, it is important to return and intensify exploration to get elevate more its efficiency. 
 
 As a suggestion for future works, it is necessary to come up with, or rearrange, new data modulation in the manipulation step, as well as replace, take out, and make use of distinct variables in the feature selection step. In addition, conduct a new version of machine learning design performed manipulating its arguments.
 
+<a name="bibliography"></a>
 ## Bibliography
 
 [1] dataset - https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)
